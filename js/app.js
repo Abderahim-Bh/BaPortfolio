@@ -38,6 +38,9 @@ let myTheTitle = document.querySelector(".theTitle");
 let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
 
 
+
+
+
 // .................................text animation code.................................
 
 for (let i = 0; i < myProjectsContainer.length; i++){
@@ -203,6 +206,9 @@ for (let i = 0; i < myLeftArrows.length; i++){
 }
 
 
+
+
+// .................................Swiper animation code.................................
 
 
 

@@ -334,17 +334,12 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "hd pj pj pj" "hd pj pj pj";
     
 }
 
-.container .projectsAndSkillsSection .projectSection .project {
-
-    padding: 10px;
-    height: 90%;
-
-}
-
 .container .projectsAndSkillsSection .projectSection .projectHead {
+    grid-area: hd;
     font-family: var(--secondFont);
     grid-row-start: 1;
     grid-row-end: 3;
@@ -356,6 +351,16 @@
     border-right: 3px solid black;
     margin-right: 10px;
 }
+.container .projectsAndSkillsSection .projectSection .project {
+
+    grid-area: pj;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #FAAB78;
+}
+
 
 .container .projectsAndSkillsSection .projectSection .projectHead .ml12{
     opacity: 0;
