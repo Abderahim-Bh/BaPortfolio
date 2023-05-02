@@ -22,7 +22,7 @@
     <!-- div icon File Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- SwiperJs CDN Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Css/swiper-bundle.min.css">
 
 </head>
 <body>
@@ -116,15 +116,59 @@
                         Projects
                     </div>
                 </div>
+                
                 <div class="project project2">
-                    <div class="projectContainer">
-                        <img src="Images/FruitsLandingPage.jpg" alt="">
-                        <div class="projectInfo">
-                            <div class="projectTitle">Landing page</div>
-                            <a href="#">Live demo</a>
-                            <div class="projectDesc">BlaBlaBlaBlaBlaBla BlaBla Bla Bla</div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="divdiv">
+                                    <div class="projectContainer">
+                                        <img src="Images/FruitsLandingPage.jpg" alt="">
+                                        <div class="projectInfo">
+                                            <div class="projectTitle">Landing page</div>
+                                            <a href="#">Live demo</a>
+                                            <div class="projectDesc">BlaBlaBlaBlaBlaBla BlaBla Bla Bla</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="divdiv">
+                                    <div class="projectContainer">
+                                        <img src="Images/FruitsLandingPage.jpg" alt="">
+                                        <div class="projectInfo">
+                                            <div class="projectTitle">Landing page</div>
+                                            <a href="#">Live demo</a>
+                                            <div class="projectDesc">BlaBlaBlaBlaBlaBla BlaBla Bla Bla</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="divdiv">
+                                    <div class="projectContainer">
+                                        <img src="Images/FruitsLandingPage.jpg" alt="">
+                                        <div class="projectInfo">
+                                            <div class="projectTitle">Landing page</div>
+                                            <a href="#">Live demo</a>
+                                            <div class="projectDesc">BlaBlaBlaBlaBlaBla BlaBla Bla Bla</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
+                 
                 </div>
 
             </div>
@@ -831,6 +875,29 @@
     <script src="js/app.js"></script>
     
     <!-- SwiperJs CDN  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                cssMode : true,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        
+
+    </script>
 </body>
 </html>
