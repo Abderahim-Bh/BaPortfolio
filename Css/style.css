@@ -1,0 +1,1164 @@
+:root{
+    --mainColor :#E8F3D6;
+    --mainFont:'Archivo', sans-serif;
+    --secondFont:'Bebas Neue', cursive;
+    --secondColor :#FAAB78;
+    --thirdColor :#FCF9BE;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_icon.svg), auto;
+}
+
+
+
+/* ----------------------------Start of the container part---------------------------- */
+.container{
+    width: 100vw;
+    font-family: var(--mainFont);
+    background-color: var(--mainColor);
+    
+}
+
+
+
+/* ----------------------------Start of the the bioSection part---------------------------- */
+
+.container .bioSection{
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    border-bottom: 3px solid black;
+    scroll-behavior: smooth;
+
+}
+
+
+
+.container .bioSection nav ul{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.container .bioSection nav ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    transition: width 0.3s ease;
+}
+.container .bioSection nav ul li:nth-child(1){
+    border-left: none;
+    background-color: rgb(255, 255, 255);
+}
+.container .bioSection nav ul li:nth-child(1) a{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    
+    
+    
+
+}
+.container .bioSection nav ul li:nth-child(1) a span{
+    padding: 2px;
+    color: var(--secondColor);
+}
+.container .bioSection nav ul li:not(:first-child):hover{
+    width: 150%;
+}
+.container .bioSection nav ul li a{
+    text-decoration: none;
+    font-family: var(--mainFont);
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .bioSection main{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 90vh;
+    grid-template-areas: "ta ta ta ta ia ia";
+
+}
+.container .bioSection main .titleAside {
+    grid-area: ta;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+.container .bioSection main .titleAside .hOneContainer{
+    overflow: hidden;
+    align-self: flex-start;
+}
+.container .bioSection main .titleAside h1{
+    font-family: var(--secondFont);
+    font-size: 50px;
+}
+.container .bioSection main .titleAside h1 span:nth-child(4){
+    font-size: 20px;
+}
+
+/* .container .bioSection main .titleAside .hyperLinkContainer{
+    overflow: hidden;
+    padding: 15px 5px;
+    z-index: 1;
+    position: relative;
+} */
+.container .bioSection main .titleAside a{
+    text-decoration: none;
+    font-family: var(--mainFont);
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: black;
+    box-shadow: -5px 5px black;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    align-self: flex-start;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+}
+.container .bioSection main .titleAside a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    top: 0%;
+    background-color: var(--secondColor);
+    z-index: -10;
+    transition: left 0.3s ease;
+}
+.container .bioSection main .titleAside a:hover::before{
+    left: 0%;
+}
+.container .bioSection main .imgAside {
+    grid-area: ia;
+    overflow: hidden;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.container .bioSection main .imgAside img{
+    width: 100%;
+}
+
+
+.container .bioSection .navigationDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translate(-50%,-5%);
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+
+.container .bioSection .navigationDiv .arrow .fa-regular{
+    font-size: 40px;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .bioSection .navigationDiv .arrow .fa-regular:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+
+
+/* ----------------------------End of the container part---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Start of the aboutMeSection part---------------------------- */
+
+.container .aboutMeSection{
+    
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+
+}
+.container .aboutMeSection::before{
+    content: "about me";
+    position: absolute;
+    font-size: 25em;
+    opacity: 0.07;
+    font-family: var(--secondFont);
+    
+}
+.container .aboutMeSection .aboutMeTextDiv{
+    position: relative;
+    width: 70%;
+    max-height: 90%;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--mainFont);
+    font-weight: bold;
+
+}
+
+.container .aboutMeSection .aboutMeTextDiv .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.container .aboutMeSection .aboutMeTextDiv .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+
+.container .nextAboutMeSection{
+    left: 0%;
+}
+.container .prevAboutMeSection{
+    left: 100%;
+}
+
+.container .aboutMeSection .navigationDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translate(-50%,-5%);
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+
+.container .aboutMeSection .navigationDiv .arrow .fa-regular{
+    font-size: 40px;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .aboutMeSection .navigationDiv .arrow .fa-regular:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+
+/* ----------------------------End of the aboutMeSection part---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Start of the projectsAndSkillsSection part---------------------------- */
+
+.container .projectsAndSkillsSection{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.container .projectsAndSkillsSection .projectSection{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: space-around;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+
+.container .projectsAndSkillsSection .projectSection .project {
+
+    padding: 10px;
+    height: 90%;
+
+}
+
+.container .projectsAndSkillsSection .projectSection .projectHead {
+    font-family: var(--secondFont);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-right: 3px solid black;
+    margin-right: 10px;
+}
+
+.container .projectsAndSkillsSection .projectSection .projectHead .ml12{
+    opacity: 0;
+}
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer{
+    background-color: white;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    overflow: hidden;
+    transition: height 0.3s ease;
+
+}
+
+
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer img{
+    width: 100%;
+    height: 160px;
+    filter: saturate(0.3);
+    transition: filter 0.3s ease;
+}
+
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo{
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 60px 70px;
+    
+}
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectTitle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display:  flex;
+    align-items: center;
+    padding: 5px;
+    font-family: var(--secondFont);
+    font-size: 30px;
+    border-top: 3px solid black;
+
+}
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    font-size: 13px;
+    color: black;
+    transition: all 0.3s ease;  
+}
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a:hover {
+    background-color: #FAAB78;
+}
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectDesc{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top: 3px solid black;
+    padding: 5px;
+}
+
+
+
+
+.container .projectsAndSkillsSection .skillsSection{
+    width: 100%;
+    height: 100%;
+    background-color: white;  
+    position: absolute; 
+    left: 100%;
+    transition: all 1s ease;
+    z-index: 3;
+    display:grid ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "hs hs" "ss bk";
+    border-bottom: 3px solid black;
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills{
+    grid-area: hs;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "sl sn sn sn" "sl sp sp sp";
+    transition: all 0.3s ease;
+}
+
+
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillLogo{
+    background-color: white;
+    grid-area: sl;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillLogo .svgClass{
+    width: 30px;
+}
+
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillName{
+    background-color: var(--mainColor);
+    grid-area: sn;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 5px;
+    display: flex;
+    align-items: flex-end;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress{
+    background-color: var(--mainColor);
+    grid-area: sp;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress .theProgress{
+    height: 15px;
+    width: 85%;
+    border: 3px solid black;
+    border-radius: 50px;
+    position: relative;
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress .theProgress .theBar {
+    transition: width 0.8s ease;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    left: 0%;
+    top: 0%;
+    transform: translate();
+    background-color: var(--secondColor);
+    border-radius: 10px;
+}
+.container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress span{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    width: 15%;
+}
+
+.container .projectsAndSkillsSection .skillsSection .hardSkills .titleHardSkills{
+    font-family: var(--secondFont);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+
+
+
+
+.container .projectsAndSkillsSection .skillsSection .softSkills{
+    grid-area: ss;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: repeat(8,1fr); 
+}
+.container .projectsAndSkillsSection .skillsSection .softSkills .soft {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-areas: "rd rd rd p p p p p p p";
+}
+.container .projectsAndSkillsSection .skillsSection .softSkills .soft .softContainer {
+    height: 100%;
+    width: 100%;
+    grid-area: rd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .projectsAndSkillsSection .skillsSection .softSkills .soft div .roundDiv{
+    height: 10px;
+    width: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-left: 35px;
+    
+}
+.container .projectsAndSkillsSection .skillsSection .softSkills .soft p {
+    grid-area: p;
+    font-family: var(--mainFont);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.container .projectsAndSkillsSection .skillsSection .softSkills .titleSoft{
+    font-family: var(--secondFont);
+    font-size: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.container .projectsAndSkillsSection .skillsSection .basicKnowlidge{
+    grid-area: bk;
+    border-left: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: var(--mainColor);
+    
+}
+
+.container .projectsAndSkillsSection .skillsSection .basicKnowlidge .titleKnowlidge {
+    font-family: var(--secondFont);
+    font-size: 25px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    opacity: 0;
+}
+
+
+.container .projectsAndSkillsSection .skillsSection .basicKnowlidge .knowlidge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container .projectsAndSkillsSection .skillsSection .basicKnowlidge .knowlidgeLogo .svgKClass {
+    width: 60px;
+}
+
+
+.container .projectsAndSkillsSection .skillsSection .navigationDiv{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    transform: translate(-50%,-5%);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    z-index: 1;
+}
+
+
+
+.container .projectsAndSkillsSection .navigationDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translate(-50%,-5%);
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    z-index: 1;
+}
+
+.container .projectsAndSkillsSection .navigationDiv .arrow .fa-regular{
+    font-size: 40px;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .projectsAndSkillsSection .navigationDiv .toSkills{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-65%,-50%);
+}
+
+.container .projectsAndSkillsSection .navigationDiv .arrow .fa-regular:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+/* ----------------------------End of the projectsAndSkillsSection part---------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------Start of the studiesAndCertificationsSection part---------------------------- */
+
+.container .studiesAndCertificationsSection{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .studiesAndCertificationsSection .studiesSection {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeLineTitel {
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    font-size: 90px;
+    font-family: var(--secondFont);
+    opacity: 0;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline{
+    height: 50px;
+    width: 90%;
+    background-color: var(--mainColor);
+    border: 3px solid black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData{
+    background-color: white;
+    height: 100%;
+    width: 100px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .td1::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%,50%);
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .td2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 70%);
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .td3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, 50%);
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .td4::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 70%);
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData p{
+    font-family: var(--secondFont);
+    font-size: 20px;
+    
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd1{
+    height: 250%;
+    width: 200%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd2{
+    height: 250%;
+    width: 200%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,40%);
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd3{
+    height: 250%;
+    width: 200%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd4{
+    height: 250%;
+    width: 200%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: "ts" "ts" "ds" "ds" "ds" "ds";
+    border: 3px solid black;
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .titleStudie{
+    grid-area: ts;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondFont);
+    font-size: 20px;
+    padding: 5px;
+    background-color: #E8F3D6;
+}
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .descriptionStudie{
+    grid-area: ds;
+    font-family: var(--mainFont);
+    font-weight: bold;
+    padding: 5px;
+    font-size: 12px;
+    background-color: white;
+}
+.container .studiesAndCertificationsSection .certificationsSection {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    transition: all 1s ease;
+    z-index: 3;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv{
+    border: 3px solid black;
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(1.2);
+}
+
+
+
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription{
+    position: absolute;
+    background-color: var(--mainColor);
+    bottom: -0%;
+    border-top: 3px solid black;
+    padding: 3px;
+    width: 100%;
+    height: 15%;
+}
+
+
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription .headP{
+    font-family: var(--secondFont);
+
+}
+
+
+
+.container .studiesAndCertificationsSection .certificationsSection .certificatTitle {
+    background-color: var(--mainColor);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    font-family: var(--secondFont);
+    font-size: 90px;
+    padding: 10px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    
+}
+
+.container .studiesAndCertificationsSection .certificationsSection .certificatTitle .theTitle {
+    opacity: 0;
+}
+
+
+.container .studiesAndCertificationsSection .navigationDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translate(-50%, -5%);
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    z-index: 1;    
+}
+
+.container .studiesAndCertificationsSection .certificationsSection .navigationDiv {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    transform: translate(-50%, -5%);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    z-index: 1;
+}
+
+
+
+.container .studiesAndCertificationsSection .navigationDiv .arrow .fa-regular{
+    font-size: 40px;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.container .studiesAndCertificationsSection .navigationDiv .toCertification {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-65%, -50%);
+}
+
+.container .studiesAndCertificationsSection .navigationDiv .arrow .fa-regular:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+
+/* ----------------------------End of the studiesAndCertificationsSection part---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Start of the contactSection part---------------------------- */
+
+.container .contactSection{
+    scroll-snap-align: start;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "fc fc cc sc" "gtc gtc gtc mc";
+    overflow: hidden;
+}
+
+.container .contactSection .flowersContainer{
+    background-image: url(../Images/flowers-6803234.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: fc;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    overflow: hidden;
+}
+.container .contactSection .contactContainer{
+    grid-area: cc;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.container .contactSection .contactContainer .divContainer {
+    padding: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .contactSection .contactContainer .divContainer .titleDiv{
+    font-family: var(--secondFont);
+    font-size: 30px;
+}
+.container .contactSection .contactContainer .divContainer .theDiv{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container .contactSection .socialMediaContainer{
+    grid-area: sc;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10px;
+}
+.container .contactSection .socialMediaContainer .facebookDiv{
+    height: 70px;
+    width: 70px;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .contactSection .socialMediaContainer .instagramDiv{
+    height: 70px;
+    width: 70px;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .contactSection .socialMediaContainer img{
+    width: 40px;
+}
+
+
+.container .contactSection .getInTouchContainer{
+    grid-area: gtc;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    font-family: var(--secondFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    background: url(../Images/flowers-6803234.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.container .contactSection .getInTouchContainer .getInTouchTitle{
+  
+}
+
+.container .contactSection .mapContainer{
+    grid-area: mc;
+    border-bottom: 3px solid black;
+}
+.container .contactSection .mapContainer iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.container .contactSection .navigationDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translate(-50%,-5%);
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+
+.container .contactSection .navigationDiv .arrow .fa-regular{
+    font-size: 40px;
+    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container .contactSection .navigationDiv .arrow .fa-regular:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+
+/* ----------------------------end of the contactSection part---------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------Start of the footer part---------------------------- */
+/* 
+footer{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 5vw;
+    height: 50vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .arrow{
+    height: 15%;
+    width: 100%;
+    background-color: var(--secondColor);
+    
+}
+footer .previousArrow{
+    border-right: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .nextArrow{
+    border-left: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------End of the footer part---------------------------- */
+
+/* ----------------------------End of the container part---------------------------- */
