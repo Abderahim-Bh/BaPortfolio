@@ -229,39 +229,31 @@
 
 }
 .container .aboutMeSection::before{
-    content: "about me";
+    content: "BaPortfolio";
     position: absolute;
-    font-size: 25em;
+    bottom: 2%;
+    font-size: 5em;
     opacity: 0.07;
-    font-family: var(--secondFont);
+    font-family: 'Dancing Script', cursive;
     
 }
 .container .aboutMeSection .aboutMeTextDiv{
     position: relative;
     width: 70%;
     max-height: 90%;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     font-family: var(--mainFont);
     font-weight: bold;
 
 }
 
-.container .aboutMeSection .aboutMeTextDiv .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
+
+.container .aboutMeSection .aboutMeTextDiv .letters .heyThere{
+    font-size: 60px;
+    display: block;
+    margin-bottom: 20px;
 }
-
-.container .aboutMeSection .aboutMeTextDiv .letter {
-    transform-origin: 50% 100%;
-    display: inline-block;
-    line-height: 1em;
-  }
-
 
 
 .container .nextAboutMeSection{
@@ -374,7 +366,8 @@
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
     background-color: white;
-    height: 275px;
+    height: 430px; /*275*/
+    width: 35%;
     display: flex;
     flex-direction: column;
     border: 3px solid black;
@@ -397,13 +390,13 @@
     height: 100%;
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-template-rows: 60px 70px;
     
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectTitle{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     display:  flex;
     align-items: center;
     padding: 5px;
@@ -413,8 +406,8 @@
 
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a{
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 7;
     display:  flex;
     align-items: center;
     justify-content: center;
@@ -428,11 +421,12 @@
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a:hover {
     background-color: #FAAB78;
+    
 }
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectDesc{
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 3;
     border-top: 3px solid black;
