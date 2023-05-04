@@ -36,6 +36,7 @@ let myTitleSoft = document.querySelector(".titleSoft");
 let myTitleKnowlidge = document.querySelector(".titleKnowlidge");
 let myTheTitle = document.querySelector(".theTitle");
 let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
+let myFaCircleRight = document.querySelector(".fa-circle-right");
 
 
 
@@ -55,6 +56,7 @@ for (let i = 0; i < myProjectsContainer.length; i++){
 window.onscroll = () => {
     if (window.scrollY >= 1170) {
         myMl12.classList.add("animate__animated", "animate__fadeInLeft");
+        myFaCircleRight.classList.add("fcrAnimationClass");
     }
     if (window.scrollY >= 1570) {
         myTimeLineTitel.classList.add("animate__animated", "animate__fadeInLeft");
