@@ -55,12 +55,7 @@ for (let i = 0; i < myProjectsContainer.length; i++){
 }
 
 window.onscroll = () => {
-    // if (window.scrollY >= 10) {
-    //     window.scrollTo(0, myBioSection.clientHeight);
-    // }
-    // if (window.scrollY >= myBioSection.clientHeight + 10) {
-    //     window.scrollTo(0, myBioSection.clientHeight*2 + 5);
-    // }
+
     if (window.scrollY >= 1170) {
         myMl12.classList.add("animate__animated", "animate__fadeInLeft");
         myFaCircleRight[0].classList.add("fcrAnimationClass");
