@@ -36,7 +36,8 @@ let myTitleSoft = document.querySelector(".titleSoft");
 let myTitleKnowlidge = document.querySelector(".titleKnowlidge");
 let myTheTitle = document.querySelector(".theTitle");
 let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
-let myFaCircleRight = document.querySelector(".fa-circle-right");
+let myFaCircleRight = document.querySelectorAll(".fa-circle-right");
+let myBioSection = document.querySelector(".bioSection");
 
 
 
@@ -54,12 +55,22 @@ for (let i = 0; i < myProjectsContainer.length; i++){
 }
 
 window.onscroll = () => {
+    // if (window.scrollY >= 10) {
+    //     window.scrollTo(0, myBioSection.clientHeight);
+    // }
+    // if (window.scrollY >= myBioSection.clientHeight + 10) {
+    //     window.scrollTo(0, myBioSection.clientHeight*2 + 5);
+    // }
     if (window.scrollY >= 1170) {
         myMl12.classList.add("animate__animated", "animate__fadeInLeft");
-        myFaCircleRight.classList.add("fcrAnimationClass");
+        myFaCircleRight[0].classList.add("fcrAnimationClass");
+        
+  
     }
     if (window.scrollY >= 1570) {
         myTimeLineTitel.classList.add("animate__animated", "animate__fadeInLeft");
+        myFaCircleRight[1].classList.add("fcrAnimationClass");
+
     }
  
     

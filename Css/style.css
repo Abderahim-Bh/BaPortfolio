@@ -25,7 +25,10 @@
     width: 100vw;
     font-family: var(--mainFont);
     background-color: var(--mainColor);
-    
+    background: url(/Images/low-poly-grid-haikeiThree.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -225,13 +228,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid black;;
 
 }
 .container .aboutMeSection::before{
     content: "BaPortfolio";
     position: absolute;
-    bottom: 2%;
+    bottom: -1%;
     font-size: 5em;
     opacity: 0.07;
     font-family: 'Dancing Script', cursive;
@@ -245,6 +248,10 @@
     line-height: 30px;
     font-family: var(--mainFont);
     font-weight: bold;
+    background-color: white;
+    padding: 20px 15px 15px;
+    border: 3px solid black;
+    overflow: hidden;
 
 }
 
@@ -327,7 +334,6 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: "hd pj pj pj" "hd pj pj pj";
-    
 }
 
 .container .projectsAndSkillsSection .projectSection .projectHead {
