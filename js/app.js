@@ -18,6 +18,8 @@ let myToStudie = document.querySelector(".toStudie");
 let myskillsSection = document.querySelector(".skillsSection");
 let myCertificationSection = document.querySelector(".certificationsSection");
 let myStudieSection = document.querySelector(".studiesSection");
+
+// ************************ start projects & skills section ************************
 let myProjectTitle = document.querySelectorAll(".projectTitle");
 let myProjecsInfo = document.querySelectorAll(".projectInfo");
 let myProjectsContainer = document.querySelectorAll(".projectContainer");
@@ -25,6 +27,11 @@ let myProjectsContainerImg = document.querySelectorAll(".projectContainer img");
 let myProjectImg = document.querySelectorAll(".projectsContainer .projects .projectImg img");
 let myRightSliderArrow = document.querySelector(".rightSliderArrow");
 let myleftSliderArrow = document.querySelector(".leftSliderArrow");
+let myprojectInfoHyperLinks = document.querySelectorAll(".projectInfo a");
+
+
+// ************************ end projects & skills section ************************
+
 let mySkillNames = document.querySelectorAll(".skillName");
 let myTheProgress = document.querySelectorAll(".theProgress");
 let mySkillProgressSpan = document.querySelectorAll(".skillProgress span");
@@ -39,6 +46,27 @@ let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
 let myFaCircleRight = document.querySelectorAll(".fa-circle-right");
 let myBioSection = document.querySelector(".bioSection");
 
+
+
+
+// .................................project container animation code.................................
+
+
+
+for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
+    myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
+        e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
+        e.currentTarget.parentElement.parentElement.firstElementChild.remove();
+        e.currentTarget.previousElementSibling.classList.add("projectTitleAnimation");
+        e.currentTarget.classList.add("projectTitleAnimation");
+        
+        let myHyperLinkBefor = window.getComputedStyle(myprojectInfoHyperLinks[i], '::befor');
+        myprojectInfoHyperLinks[i].style.setProperty("--displayBefor","block")
+        
+        // myBioSection
+        // console.log(e.currentTarget.previousElementSibling)
+    })
+}
 
 
 
