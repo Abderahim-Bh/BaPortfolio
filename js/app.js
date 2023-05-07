@@ -55,21 +55,31 @@ let myBioSection = document.querySelector(".bioSection");
 
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
-        e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
-        // e.currentTarget.parentElement.parentElement.firstElementChild.style.bottom="10%";
-        e.currentTarget.previousElementSibling.classList.add("projectTitleAnimation");
-        e.currentTarget.classList.add("projectTitleAnimation");
-        let myHyperLinkBefor = window.getComputedStyle(myprojectInfoHyperLinks[i], '::befor');
-        myprojectInfoHyperLinks[i].style.setProperty("--displayBefor", "flex")
-        e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
-        myprojectInfoHyperLinks[i].addEventListener("click", function () {
-            
-        })
-        // myBioSection
-        // console.log(e.currentTarget.previousElementSibling)
+        if (myprojectInfoHyperLinks[i].innerHTML === "Live demo") {
+            e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
+            e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
+            myprojectInfoHyperLinks[i].innerHTML = "Close";
+            myprojectInfoHyperLinks[i].style.backgroundColor = "#FF6969";
+        }
+        else if (myprojectInfoHyperLinks[i].innerHTML === "Close") {
+            e.currentTarget.parentElement.parentElement.classList.remove("projectContainerAnimation")
+            e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
+            myprojectInfoHyperLinks[i].innerHTML = "Live demo";
+            myprojectInfoHyperLinks[i].style.backgroundColor = "#FAAB78";
+        }
+        
+
     })
 }
 
+function createVideoElemnt() {
+    myElement = document.createElement("video");
+    myElement.setAttribute("src", "/videos/VID-20190420-WA0013.mp4")
+    myElement.setAttribute("controls", "controls");
+    myProjectsContainer[0].append(myElement)
+}
+
+createVideoElemnt();
 
 // .................................text animation code.................................
 

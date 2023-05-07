@@ -369,9 +369,14 @@
     opacity: 0;
 }
 
+.container .projectsAndSkillsSection .projectSection .project .projectContainer video{
+
+}
+
+
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
     background-color: rgb(206, 128, 128);
-    height: 430px; /*275*/
+    height: 88%; /*275*/
     width: 35%; 
     display: flex;
     flex-direction: column;
@@ -382,13 +387,12 @@
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
     width: 70%;
-    
 }
-
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer img{
     width: 100%;
+    height: 100%;
     filter: saturate(0.3);
     transition: filter 0.3s ease;
     position: relative;
@@ -415,10 +419,7 @@
     font-size: 30px;
     border-top: 3px solid black;
 }
-.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectTitleAnimation {
-    border-top: 0px;
-    
-}
+
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a{
     grid-column-start: 5;
     grid-column-end: 7;
@@ -428,32 +429,20 @@
     text-decoration: none;
     border-top: 3px solid black;
     border-left: 3px solid black;
-    font-size: 13px;
-    color: black;
+    font-family: var(--secondFont);
+    font-size: 20px;
+    color: white;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+    background-color: #FAAB78;
 }
 
 
-.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a::before {
-    content: "Close";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #FF6969;
-    display: var(--displayBefor, none);
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: var(--secondFont);
-    font-size: 30px;
-    transition: all 0.3s ease;
-}
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a:hover {
-    background-color: #FAAB78;
+    background-color: #ff9d5c;
     
 }
 
