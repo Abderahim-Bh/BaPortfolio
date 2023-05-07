@@ -56,31 +56,38 @@ let myBioSection = document.querySelector(".bioSection");
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
         e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
-        e.currentTarget.parentElement.parentElement.firstElementChild.remove();
+        // e.currentTarget.parentElement.parentElement.firstElementChild.style.bottom="10%";
         e.currentTarget.previousElementSibling.classList.add("projectTitleAnimation");
         e.currentTarget.classList.add("projectTitleAnimation");
-        
         let myHyperLinkBefor = window.getComputedStyle(myprojectInfoHyperLinks[i], '::befor');
-        myprojectInfoHyperLinks[i].style.setProperty("--displayBefor","block")
-        
+        myprojectInfoHyperLinks[i].style.setProperty("--displayBefor", "flex")
+        e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
+        myprojectInfoHyperLinks[i].addEventListener("click", function () {
+            
+        })
         // myBioSection
         // console.log(e.currentTarget.previousElementSibling)
     })
 }
 
 
-
-
 // .................................text animation code.................................
 
+console.log(myProjectsContainer[0].firstElementChild)
 for (let i = 0; i < myProjectsContainer.length; i++){
-        myProjectsContainer[i].addEventListener("mouseover", (e) => {
-        e.currentTarget.firstElementChild.style.filter = "saturate(1)";
-    })  
-        myProjectsContainer[i].addEventListener("mouseout", (e) => {
-        e.currentTarget.firstElementChild.style.filter = "saturate(0.3)";
+    myProjectsContainer[i].addEventListener("mouseover", (e) => {
+        if (e.currentTarget.firstElementChild.tagName === "IMG") {
+            e.currentTarget.firstElementChild.style.filter = "saturate(1)";
+        }
+    })
+    myProjectsContainer[i].addEventListener("mouseout", (e) => {
+        if (e.currentTarget.firstElementChild.tagName === "IMG") {
+            e.currentTarget.firstElementChild.style.filter = "saturate(0.3)";
+        }
     })  
 }
+
+
 
 window.onscroll = () => {
 

@@ -370,7 +370,7 @@
 }
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
-    background-color: white;
+    background-color: rgb(206, 128, 128);
     height: 430px; /*275*/
     width: 35%; 
     display: flex;
@@ -378,30 +378,20 @@
     border: 3px solid black;
     overflow: hidden;
     transition: width 0.3s ease;
-
+    
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
     width: 70%;
     
 }
 
-@keyframes projectContainerAnimat {
-    0% {
-        width: 35%;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer img{
     width: 100%;
-    height: 160px;
     filter: saturate(0.3);
     transition: filter 0.3s ease;
+    position: relative;
 }
 
 
@@ -447,12 +437,18 @@
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo a::before {
-    content: "";
+    content: "Close";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: lightcoral;
+    background-color: #FF6969;
     display: var(--displayBefor, none);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--secondFont);
+    font-size: 30px;
+    transition: all 0.3s ease;
 }
 
 
