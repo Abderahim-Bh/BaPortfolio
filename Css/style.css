@@ -369,13 +369,9 @@
     opacity: 0;
 }
 
-.container .projectsAndSkillsSection .projectSection .project .projectContainer video{
-
-}
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
-    background-color: rgb(206, 128, 128);
     height: 88%; /*275*/
     width: 35%; 
     display: flex;
@@ -383,6 +379,7 @@
     border: 3px solid black;
     overflow: hidden;
     transition: width 0.3s ease;
+    position: relative;
     
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
@@ -390,12 +387,33 @@
 }
 
 
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container .projectsAndSkillsSection .projectSection .project .projectContainer img{
     width: 100%;
     height: 100%;
     filter: saturate(0.3);
     transition: filter 0.3s ease;
-    position: relative;
+    
+}
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .imgAnimate {
+    opacity: 0;
+    transition: all 1s ease;
+    
+    
+
+}
+
+
+.container .projectsAndSkillsSection .projectSection .project .projectContainer video {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    
 }
 
 

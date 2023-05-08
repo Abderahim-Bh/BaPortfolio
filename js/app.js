@@ -28,6 +28,8 @@ let myProjectImg = document.querySelectorAll(".projectsContainer .projects .proj
 let myRightSliderArrow = document.querySelector(".rightSliderArrow");
 let myleftSliderArrow = document.querySelector(".leftSliderArrow");
 let myprojectInfoHyperLinks = document.querySelectorAll(".projectInfo a");
+let myImageDiv = document.querySelectorAll(".imageDiv");
+let myProjectContainerVideo = document.querySelectorAll(".projectContainer video");
 
 
 // ************************ end projects & skills section ************************
@@ -50,8 +52,14 @@ let myBioSection = document.querySelector(".bioSection");
 
 
 // .................................project container animation code.................................
+function createVideoElemnt(videoType) {
+    myElement = document.createElement("video");
+    myElement.setAttribute("src", "/videos/" + videoType)
+    myElement.setAttribute("controls", "controls");
+    myImageDiv[0].append(myElement)
+}
 
-
+console.log(myProjectContainerVideo)
 
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
@@ -60,6 +68,15 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
             myprojectInfoHyperLinks[i].innerHTML = "Close";
             myprojectInfoHyperLinks[i].style.backgroundColor = "#FF6969";
+            
+            if (myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src") === "Images/FruitsLandingPage.jpg") {
+                myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
+                setTimeout(function () {
+                    createVideoElemnt("vidOne.mp4")
+                },1000)
+            }
+            
+          
         }
         else if (myprojectInfoHyperLinks[i].innerHTML === "Close") {
             e.currentTarget.parentElement.parentElement.classList.remove("projectContainerAnimation")
@@ -72,18 +89,10 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     })
 }
 
-function createVideoElemnt() {
-    myElement = document.createElement("video");
-    myElement.setAttribute("src", "/videos/VID-20190420-WA0013.mp4")
-    myElement.setAttribute("controls", "controls");
-    myProjectsContainer[0].append(myElement)
-}
 
-createVideoElemnt();
 
 // .................................text animation code.................................
 
-console.log(myProjectsContainer[0].firstElementChild)
 for (let i = 0; i < myProjectsContainer.length; i++){
     myProjectsContainer[i].addEventListener("mouseover", (e) => {
         if (e.currentTarget.firstElementChild.tagName === "IMG") {
