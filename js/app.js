@@ -14,6 +14,7 @@ let myRightArrows = document.querySelectorAll(".rightArrow");
 let myToSkills = document.querySelector(".toSkills");
 let myToProjects = document.querySelector(".toProjects");
 let myToCertification = document.querySelector(".toCertification");
+let myBackToCertifications = document.querySelector(".backToCertifications");
 let myToStudie = document.querySelector(".toStudie");
 let myskillsSection = document.querySelector(".skillsSection");
 let myCertificationSection = document.querySelector(".certificationsSection");
@@ -21,6 +22,9 @@ let myStudieSection = document.querySelector(".studiesSection");
 let myShowCertificat = document.querySelector(".showCertificat");
 let myCc = document.querySelectorAll(".cc");
 let myShowCertificatImg = document.querySelector(".showCertificat img");
+
+
+
 
 
 // ************************ start projects & skills section ************************
@@ -34,9 +38,10 @@ let myleftSliderArrow = document.querySelector(".leftSliderArrow");
 let myprojectInfoHyperLinks = document.querySelectorAll(".projectInfo a");
 let myImageDiv = document.querySelectorAll(".imageDiv");
 let myProjectContainerVideo = document.querySelectorAll(".projectContainer video");
-
-
 // ************************ end projects & skills section ************************
+
+
+
 
 let mySkillNames = document.querySelectorAll(".skillName");
 let myTheProgress = document.querySelectorAll(".theProgress");
@@ -211,6 +216,9 @@ function mybarFunction (){
     mySkillProgressSpan[14].textContent = "40%";
 }
 
+
+// .................................navigation arrows.................................
+
 myToSkills.addEventListener("click", function () {
     myskillsSection.style.left = "0%";
     setTimeout(mybarFunction, 1000);
@@ -227,9 +235,18 @@ myToCertification.addEventListener("click", function () {
     setTimeout(myTheTitleanimation, 1000);
 
 })
+myBackToCertifications.addEventListener("click", function () {
+    myShowCertificat.style.right = "-100%";
+    
+
+})
 myToStudie.addEventListener("click", function () {
     myCertificationSection.style.left = "100%";
 })
+
+
+
+
 
 function bioSectionFadeOut() {
     myHeader.classList.add("animate__animated", "animate__slideOutUp", "animate__delay-1s");
