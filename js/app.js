@@ -52,28 +52,42 @@ let myBioSection = document.querySelector(".bioSection");
 
 
 // .................................project container animation code.................................
-function createVideoElemnt(videoType) {
+function createVideoElemnt(videoType, target) {
+    let counter = 0
+    if (target === "Images/FruitsLandingPage.jpg") {
+        counter = 0
+    } else if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
+        counter = 1
+    }
     myElement = document.createElement("video");
     myElement.setAttribute("src", "/videos/" + videoType)
     myElement.setAttribute("controls", "controls");
-    myImageDiv[0].append(myElement)
+    myImageDiv[counter].append(myElement)
 }
 
 console.log(myProjectContainerVideo)
 
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
-        if (myprojectInfoHyperLinks[i].innerHTML === "Live demo") {
+        if (e.currentTarget.innerHTML === "Live demo") {
             e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
             e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
-            myprojectInfoHyperLinks[i].innerHTML = "Close";
-            myprojectInfoHyperLinks[i].style.backgroundColor = "#FF6969";
+            e.currentTarget.innerHTML = "Close";
+            e.currentTarget.style.backgroundColor = "#FF6969";
             
-            if (myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src") === "Images/FruitsLandingPage.jpg") {
-                myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
+            let target = e.currentTarget.parentElement.previousElementSibling.firstElementChild.getAttribute("src"); 
+            console.log(target)
+            if (target === "Images/FruitsLandingPage.jpg") {
+                e.currentTarget.parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
                 setTimeout(function () {
-                    createVideoElemnt("vidOne.mp4")
-                },1000)
+                    createVideoElemnt("vidOne.mp4", target)
+                },500)
+            }
+            else if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
+                e.currentTarget.parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
+                setTimeout(function () {
+                    createVideoElemnt("vidOne.mp4", target)
+                },500)
             }
             
           
@@ -83,6 +97,12 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
             myprojectInfoHyperLinks[i].innerHTML = "Live demo";
             myprojectInfoHyperLinks[i].style.backgroundColor = "#FAAB78";
+            
+            if (myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src") === "Images/FruitsLandingPage.jpg") {
+                myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
+                clearTimeout(1);
+            }
+        
         }
         
 
