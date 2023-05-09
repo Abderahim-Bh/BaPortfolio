@@ -18,6 +18,10 @@ let myToStudie = document.querySelector(".toStudie");
 let myskillsSection = document.querySelector(".skillsSection");
 let myCertificationSection = document.querySelector(".certificationsSection");
 let myStudieSection = document.querySelector(".studiesSection");
+let myShowCertificat = document.querySelector(".showCertificat");
+let myCc = document.querySelectorAll(".cc");
+let myShowCertificatImg = document.querySelector(".showCertificat img");
+
 
 // ************************ start projects & skills section ************************
 let myProjectTitle = document.querySelectorAll(".projectTitle");
@@ -51,7 +55,23 @@ let myBioSection = document.querySelector(".bioSection");
 
 
 
-// .................................project container animation code.................................
+// .................................showCertificat container animation.................................
+
+for (let i = 0; i < myCc.length; i++){
+    myCc[i].addEventListener("click", (e) =>{
+        myShowCertificat.style.right = "0%";
+        let newValue = e.currentTarget.firstElementChild.firstElementChild.firstElementChild.getAttribute("src")
+        myShowCertificatImg.setAttribute("src",newValue)
+
+    })
+}
+
+
+
+
+
+
+// .................................project container animation.................................
 function createVideoElemnt(videoType, target) {
     let counter = 0
     if (target === "Images/FruitsLandingPage.jpg") {

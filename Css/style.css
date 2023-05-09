@@ -950,31 +950,26 @@
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
     grid-area: pcp;
-    background-color: red;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
+    position: relative;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc{
-    background-color: lawngreen;
     margin: 10px;
     border: 3px solid black;
 }
 
 
-/* .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc {
-    background-color: lawngreen;
-    margin: 10px;
-    border: 3px solid black;
-} */
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificat2 {
+    
+}
 
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv{
     width: 100%;
     height: 100%;
-    background-color: aquamarine; 
     display: flex;
     flex-direction: column;
     position: relative;
@@ -983,7 +978,6 @@
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat{
     width: 100%;
-    background-color: salmon;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -991,6 +985,10 @@
     overflow: hidden;
 }
 
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat img{
+    width: 100%;
+    scale: 1.2;
+}
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat img{
     width: 100%;
     scale: 1.2;
@@ -1020,6 +1018,22 @@
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription .headP{
     font-family: var(--secondFont);
 
+}
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .showCertificat {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    right: -100%;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .showCertificat img{
+    border: 3px solid black;
+    width: 60%;
 }
 
 
