@@ -957,15 +957,28 @@
 
 }
 
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc{
+    background-color: lawngreen;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+
+/* .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc {
+    background-color: lawngreen;
+    margin: 10px;
+    border: 3px solid black;
+} */
+
+
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv{
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     background-color: aquamarine; 
-    overflow: hidden;
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat{
@@ -975,35 +988,39 @@
     align-items: center;
     justify-content: center;
     flex-grow: 2;
+    overflow: hidden;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat img{
-    width: 80%;
+    width: 100%;
+    scale: 1.2;
 }
 
 
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription{
-    background-color: yellow;
-    height: 20%;
-    width: 100%;
-    /* position: absolute;
+    position: absolute;
     background-color: var(--mainColor);
-    bottom: -0%;
+    bottom: 0%;
+    transform: translateY(100%);
     border-top: 3px solid black;
     padding: 3px;
     width: 100%;
     height: 20%;
     display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center; 
+    transition: all 0.3s ease;
 }
 
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv:hover .certificatDescription{
+    transform: translateY(0%);
+}
 
-/*.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription .headP{
+.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription .headP{
     font-family: var(--secondFont);
 
-} */
+}
 
 
 
