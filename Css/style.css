@@ -31,6 +31,89 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #e8f3d6;
+    overflow: hidden;
+}
+
+.background span {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 43;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #ffffff;
+    top: 53%;
+    left: 91%;
+    animation-duration: 62s;
+    animation-delay: -4s;
+    transform-origin: -12vw -16vh;
+    box-shadow: -100vmin 0 13.229218561834141vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #ffffff;
+    top: 75%;
+    left: 54%;
+    animation-duration: 75s;
+    animation-delay: -44s;
+    transform-origin: 18vw 19vh;
+    box-shadow: -100vmin 0 13.044830047672278vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #ffffff;
+    top: 8%;
+    left: 24%;
+    animation-duration: 63s;
+    animation-delay: -54s;
+    transform-origin: 15vw 17vh;
+    box-shadow: -100vmin 0 13.206225355137462vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #ffffff;
+    top: 83%;
+    left: 68%;
+    animation-duration: 66s;
+    animation-delay: -24s;
+    transform-origin: -24vw -20vh;
+    box-shadow: -100vmin 0 12.693431514591795vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #ffffff;
+    top: 90%;
+    left: 85%;
+    animation-duration: 13s;
+    animation-delay: -1s;
+    transform-origin: -20vw 13vh;
+    box-shadow: -100vmin 0 12.85880107374038vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #ffffff;
+    top: 61%;
+    left: 16%;
+    animation-duration: 12s;
+    animation-delay: -31s;
+    transform-origin: -16vw 5vh;
+    box-shadow: -100vmin 0 13.031024723201627vmin currentColor;
+}
 
 
 /* ----------------------------Start of the the bioSection part---------------------------- */
