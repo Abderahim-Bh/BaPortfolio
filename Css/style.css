@@ -1,5 +1,5 @@
 :root{
-    --mainColor :rgb(232, 243, 214);
+    --mainColor :#e8f3d6;
     --mainFont:'Archivo', sans-serif;
     --secondFont:'Bebas Neue', cursive;
     --secondColor :#FAAB78;
@@ -11,10 +11,10 @@
 }
 
 *{
+    scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
     cursor: url(../Images/8685631_ic_fluent_cursor_filled_icon.svg), auto;
 }
 
@@ -347,7 +347,7 @@
     z-index: 2;
     overflow: hidden;
     align-self: flex-start;
-    cursor: url(../Images/8685631_ic_fluent_cursor_filled_iconTwp.svg),auto;
+    cursor: url(../Images/hand-cursor.svg),auto;
 }
 .container .bioSection main .titleAside a::before{
     content: "";
@@ -368,9 +368,20 @@
     overflow: hidden;
     border-left: 3px solid black;
     border-bottom: 3px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: whitesmoke;
 }
 .container .bioSection main .imgAside img{
     width: 100%;
+    scale: 1.2;
+    transition: all 0.5s ease;
+    filter: saturate(0);
+}
+.container .bioSection main .imgAside img:hover{
+    scale: 1;
+    filter: saturate(1);
 }
 
 
@@ -1482,3 +1493,13 @@ footer .nextArrow{
 /* ----------------------------End of the footer part---------------------------- */
 
 /* ----------------------------End of the container part---------------------------- */
+
+
+
+/* ----------------------------start the media queries part---------------------------- */
+
+
+
+
+/* ----------------------------end the media queries part---------------------------- */
+
