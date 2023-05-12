@@ -1399,7 +1399,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 200px;
+    font-size: 180px;
     background: url(../Images/flowers-6803234.svg);
     background-position: center;
     background-size: cover;
@@ -1484,6 +1484,28 @@
         .container .studiesAndCertificationsSection .certificationsSection .certificatTitle .theTitle {
             font-size: 60px;
         }
+        .container .contactSection .getInTouchContainer{
+            font-size: 145px;
+        }
+        .container .projectsAndSkillsSection .skillsSection .hardSkills .skills:not(:first-child){
+            font-size: 14px;
+        }
+        
+        .container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress .theProgress {
+            width: 80%;
+        }
+        .container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillLogo .svgClass {
+            width: 25px;
+        }
+        .container .projectsAndSkillsSection .skillsSection .basicKnowlidge .knowlidgeLogo .svgKClass {
+            width: 40px;
+        }
+        .container .projectsAndSkillsSection .skillsSection .softSkills .soft p {
+            font-size: 15px;
+        }
+
+
+
 
 }
 
