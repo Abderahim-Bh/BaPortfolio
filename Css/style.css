@@ -250,7 +250,7 @@
     position: relative;
     border-bottom: 3px solid black;
     scroll-behavior: smooth;
-
+    overflow: hidden;
 }
 
 
@@ -306,13 +306,13 @@
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 90vh;
     grid-template-areas: "ta ta ta ta ia ia";
-
 }
 .container .bioSection main .titleAside {
     grid-area: ta;
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
+
 }
 .container .bioSection main .titleAside .hOneContainer{
     overflow: hidden;
@@ -557,7 +557,7 @@
     font-family: var(--secondFont);
     grid-row-start: 1;
     grid-row-end: 3;
-    font-size: 90px;
+    font-size: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -982,7 +982,7 @@
     position: absolute;
     top: -30%;
     left: 40%;
-    font-size: 90px;
+    font-size: 70px;
     font-family: var(--secondFont);
     opacity: 0;
 }
@@ -1150,12 +1150,12 @@
     justify-content: center;
     border-right: 3px solid black;
     border-left: 3px solid black;
+    text-align: center;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .headTitleContainer .certificatTitle {
     font-family: var(--secondFont);
-    font-size: 60px;
-    padding: 10px;
+    font-size: 50px;
 } 
 
 
@@ -1465,6 +1465,12 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
+        .container .bioSection main .titleAside h1{
+            font-size: 40px;
+        }
+        .container .bioSection nav ul li a{
+            font-size: 14px;
+        }
         .container .aboutMeSection .aboutMeTextDiv {
             font-size: 15px;
             line-height: 26px;
@@ -1482,7 +1488,7 @@
             font-size: 60px;
         }
         .container .studiesAndCertificationsSection .certificationsSection .certificatTitle .theTitle {
-            font-size: 60px;
+            font-size: 40px;
         }
         .container .contactSection .getInTouchContainer{
             font-size: 145px;
@@ -1511,7 +1517,36 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    
+    /* .container .bioSection nav ul li a:not(:nth-child(3)){
+        display: none;
+    } */
+    .container .bioSection nav ul li:nth-child(2){
+        display: none;
+    }
+    .container .bioSection nav ul li:nth-child(3){
+        display: none;
+    }
+    .container .bioSection nav ul li:nth-child(4){
+        display: none;
+    }
+    .container .bioSection nav ul li:nth-child(5){
+        display: none;
+    }
+    .container .bioSection main{
+        grid-template-rows: 45vh 45vh;
+        grid-template-areas: "ta ta ta ta ta ta" "ia ia ia ia ia ia";
+    }
+    .container .bioSection main .imgAside{
+        border-bottom: none;
+        border-left: none;
+        border-top: 3px solid black;
+    }
+    .container .bioSection main .imgAside img{
+        width: 400px;
+        transform: translateY(180px);
+        scale: 2;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
