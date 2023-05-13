@@ -56,8 +56,19 @@ let myTheTitle = document.querySelector(".theTitle");
 let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
 let myFaCircleRight = document.querySelectorAll(".fa-circle-right");
 let myBioSection = document.querySelector(".bioSection");
+let myMenuBtn = document.querySelector(".menuBtn");
 
 
+// .................................start menu button animation.................................
+
+if (window.innerWidth <= 768) {
+    myMenuBtn.style.display = "flex"
+}
+else {
+    myMenuBtn.style.display = "none"
+}
+
+// .................................end menu button animation.................................
 
 
 // .................................showCertificat container animation.................................
