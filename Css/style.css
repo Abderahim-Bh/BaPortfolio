@@ -369,7 +369,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .container .bioSection main .imgAside img{
     width: 100%;
@@ -1543,8 +1543,8 @@
     }
     .container .bioSection main .imgAside img{
         width: 400px;
-        transform: translateY(180px);
-        scale: 2;
+        transform: translateY(240px);
+        scale: 1.2;
     }
 
 }
