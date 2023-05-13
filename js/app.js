@@ -57,16 +57,38 @@ let myGetInTouchTitle = document.querySelector(".getInTouchTitle");
 let myFaCircleRight = document.querySelectorAll(".fa-circle-right");
 let myBioSection = document.querySelector(".bioSection");
 let myMenuBtn = document.querySelector(".menuBtn");
+let myResponsivNav = document.querySelector(".responsivNav");
 
 
 // .................................start menu button animation.................................
 
 if (window.innerWidth <= 768) {
     myMenuBtn.style.display = "flex"
+} else {
+    myMenuBtn.style.display = "none";
 }
-else {
-    myMenuBtn.style.display = "none"
+myMenuBtn.addEventListener("click", function () {
+    if (myMenuBtn.innerHTML === "menu") {
+        myResponsivNav.style.top = "0%"
+        myMenuBtn.innerHTML = "close";
+        myMenuBtn.style.backgroundColor = "#FF6969";
+    } else {
+        myResponsivNav.style.top = "-100%"
+        myMenuBtn.innerHTML = "menu";
+        myMenuBtn.style.backgroundColor = "#fcd3b9";
+    }
+    
+})
+
+window.onresize = function () {
+    if (window.innerWidth <= 768) {
+        myMenuBtn.style.display = "flex"
+    }
+    else {
+        myMenuBtn.style.display = "none"
+    }
 }
+
 
 // .................................end menu button animation.................................
 
