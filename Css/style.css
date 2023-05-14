@@ -1137,34 +1137,28 @@
     
 }
 
-.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd1{
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd {
     height: 250%;
     width: 200%;
     position: absolute;
+}
+
+.container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd1{
     top: -100%;
     left: 50%;
     transform: translate(-50%,-100%);
 }
 .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd2{
-    height: 250%;
-    width: 200%;
-    position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%,40%);
 }
 .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd3{
-    height: 250%;
-    width: 200%;
-    position: absolute;
     top: -100%;
     left: 50%;
     transform: translate(-50%,-100%);
 }
 .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd4{
-    height: 250%;
-    width: 200%;
-    position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, 40%);
@@ -1219,7 +1213,7 @@
 
 .container .studiesAndCertificationsSection .certificationsSection .headTitleContainer {
     grid-area: tttp;
-    background-color: var(--mainColor);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1245,6 +1239,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     position: relative;
+    background-color: var(--mainColor);
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc{
@@ -1551,6 +1546,10 @@
             line-height: 26px;
         }
 
+        .container .aboutMeSection .aboutMeTextDiv .letters .heyThere{
+            font-size: 50px;
+        }
+
         .container .projectsAndSkillsSection .projectSection .project .projectContainer {
             height: 80%;
             width: 50%;  
@@ -1592,9 +1591,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    /* .container .bioSection nav ul li a:not(:nth-child(3)){
-        display: none;
-    } */
     .container .bioSection nav ul li:nth-child(2){
         display: none;
     }
@@ -1629,9 +1625,84 @@
         align-self: auto;
     }
     .container .bioSection main .titleAside a{
-       margin-left: 75px;
+        margin-left: 75px;
+    }
+    .container .aboutMeSection .aboutMeTextDiv {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .container .aboutMeSection .aboutMeTextDiv .letters .heyThere{
+        font-size: 40px;
     }
 
+    .container .projectsAndSkillsSection .projectSection{
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: "hd hd hd hd" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj" "pj pj pj pj"; 
+    }
+    .container .projectsAndSkillsSection .projectSection .projectHead{
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .titleHardSkills{
+        font-size: 20px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .basicKnowlidge .titleKnowlidge{
+        font-size: 20px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .softSkills .titleSoft{
+        font-size: 20px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .skills{
+        height: 80%;
+        width: 100%;
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .skills:not(:first-child){
+        font-size: 12px;
+    }
+    
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillProgress .theProgress {
+        width: 70%;
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillLogo .svgClass {
+        width: 20px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .basicKnowlidge .knowlidgeLogo .svgKClass {
+        width: 30px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .softSkills .soft p {
+        font-size: 12px;
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills .skills .skillName {
+        padding-top: 5px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd{
+        width: 150%;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .titleStudie{
+        font-size: 17px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .descriptionStudie{
+        font-size: 10px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline{
+        height: 40px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData p {
+        font-size: 18px;
+    }
+    .container .studiesAndCertificationsSection .certificationsSection{
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: "tttp tttp tttp tttp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp" "pcp pcp pcp pcp"; 
+    }
+    .container .studiesAndCertificationsSection .certificationsSection .headTitleContainer{
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+    .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
+        overflow: scroll;
+        
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
