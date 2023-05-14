@@ -1416,6 +1416,8 @@
     border-right: 3px solid black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px 20px;
 }
 
@@ -1687,6 +1689,11 @@
     .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline{
         height: 40px;
     }
+
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData{
+        width: 90px;
+    }
+
     .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData p {
         font-size: 18px;
     }
@@ -1699,10 +1706,26 @@
         border-right: none;
         border-bottom: 3px solid black;
     }
-    .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
-        overflow: scroll;
-        
+
+    .container .contactSection .getInTouchContainer{
+        font-size: 110px;
     }
+
+    .container .contactSection .socialMediaContainer .sMDiv{
+        height: 50px;
+        width: 50px;
+        padding: 0px;
+    }
+    .container .contactSection .socialMediaContainer img{
+        width: 30px;
+    }
+    .container .contactSection .contactContainer .divContainer .titleDiv{
+        font-size: 20px;
+    }
+    .container .contactSection .contactContainer .divContainer .theDiv{
+        font-size: 12px;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
