@@ -83,9 +83,12 @@ myMenuBtn.addEventListener("click", function () {
 window.onresize = function () {
     if (window.innerWidth <= 768) {
         myMenuBtn.style.display = "flex"
+        myResponsivNav.style.display = "block"
+
     }
     else {
         myMenuBtn.style.display = "none"
+        myResponsivNav.style.display= "none"
     }
 }
 

@@ -339,6 +339,7 @@
 .container .bioSection main .titleAside .hOneContainer{
     overflow: hidden;
     align-self: flex-start;
+    height: 100%;
 }
 .container .bioSection main .titleAside h1{
     font-family: var(--secondFont);
@@ -364,6 +365,7 @@
     overflow: hidden;
     align-self: flex-start;
     cursor: url(../Images/hand-cursor.svg),auto;
+    margin: 0px 0px 5px 5px;
 }
 .container .bioSection main .titleAside .hireMe::before{
     content: "";
@@ -1622,12 +1624,14 @@
     .container .bioSection main .titleAside{
         align-items: center;
         justify-content: center;
+        padding: 0px;
     }
+    
     .container .bioSection main .titleAside .hOneContainer{
         align-self: auto;
     }
     .container .bioSection main .titleAside a{
-        margin-left: 75px;
+        align-self: auto;
     }
     .container .aboutMeSection .aboutMeTextDiv {
         font-size: 12px;
