@@ -1316,7 +1316,7 @@
     font-family: var(--secondFont);
 
 }
-.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .showCertificat {
+.container .studiesAndCertificationsSection .certificationsSection .showCertificat {
     height: 100%;
     width: 100%;
     background-color: white;
@@ -1329,7 +1329,7 @@
     z-index: 2;
 }
 
-.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .showCertificat img{
+.container .studiesAndCertificationsSection .certificationsSection .showCertificat img{
     border: 3px solid black;
     width: 60%;
 }
@@ -1579,7 +1579,7 @@
             font-size: 60px;
         }
         .container .studiesAndCertificationsSection .certificationsSection .certificatTitle .theTitle {
-            font-size: 60px;
+            font-size: 40px;
         }
 
         .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
@@ -1753,6 +1753,11 @@
         border-right: none;
         border-bottom: 3px solid black;
     }
+
+   .container .studiesAndCertificationsSection .certificationsSection .certificatTitle .theTitle {
+        font-size: 50px;
+    }
+
 
     .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
         padding-left: 100px;

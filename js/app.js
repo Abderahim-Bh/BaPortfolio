@@ -17,8 +17,9 @@ let myToCertification = document.querySelector(".toCertification");
 let myBackToCertifications = document.querySelector(".backToCertifications");
 let myToStudie = document.querySelector(".toStudie");
 let myskillsSection = document.querySelector(".skillsSection");
-let myCertificationSection = document.querySelector(".certificationsSection");
 let myStudieSection = document.querySelector(".studiesSection");
+let myCertificationSection = document.querySelector(".certificationsSection");
+let myCertificateContainer = document.querySelector(".certificateContainer");
 let myShowCertificat = document.querySelector(".showCertificat");
 let myCc = document.querySelectorAll(".cc");
 let myShowCertificatImg = document.querySelector(".showCertificat img");
@@ -91,15 +92,15 @@ window.onresize = function () {
         myResponsivNav.style.display= "none"
     }
 }
-
-
 // .................................end menu button animation.................................
+
+
 
 
 // .................................showCertificat container animation.................................
 
 for (let i = 0; i < myCc.length; i++){
-    myCc[i].addEventListener("click", (e) =>{
+    myCc[i].addEventListener("click", (e) => {
         myShowCertificat.style.right = "0%";
         let newValue = e.currentTarget.firstElementChild.firstElementChild.firstElementChild.getAttribute("src")
         myShowCertificatImg.setAttribute("src",newValue)
