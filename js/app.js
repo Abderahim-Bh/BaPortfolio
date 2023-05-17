@@ -97,23 +97,33 @@ window.onresize = function () {
 
 
 
-// .................................showCertificat container animation.................................
 
+
+
+// ................................. start showCertificat container animation.................................
 for (let i = 0; i < myCc.length; i++){
     myCc[i].addEventListener("click", (e) => {
         myShowCertificat.style.right = "0%";
         let newValue = e.currentTarget.firstElementChild.firstElementChild.firstElementChild.getAttribute("src")
         myShowCertificatImg.setAttribute("src",newValue)
-
+        
     })
 }
+// .................................end showCertificat container animation.................................
 
 
 
 
 
 
-// .................................project container animation.................................
+
+
+
+
+
+
+
+// .................................start project container animation.................................
 function createVideoElemnt(videoType, target) {
     let counter = 0
     if (target === "Images/FruitsLandingPage.jpg") {
@@ -127,7 +137,6 @@ function createVideoElemnt(videoType, target) {
     myImageDiv[counter].append(myElement)
 }
 
-
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
         if (e.currentTarget.innerHTML === "Live demo") {
@@ -137,7 +146,6 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             e.currentTarget.style.backgroundColor = "#FF6969";
             
             let target = e.currentTarget.parentElement.previousElementSibling.firstElementChild.getAttribute("src"); 
-            console.log(target)
             if (target === "Images/FruitsLandingPage.jpg") {
                 e.currentTarget.parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
                 setTimeout(function () {
@@ -147,7 +155,7 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             else if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
                 e.currentTarget.parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
                 setTimeout(function () {
-                    createVideoElemnt("vidOne.mp4", target)
+                    createVideoElemnt("vidTwo.mp4", target)
                 },500)
             }
             
@@ -159,9 +167,11 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             myprojectInfoHyperLinks[i].innerHTML = "Live demo";
             myprojectInfoHyperLinks[i].style.backgroundColor = "#FAAB78";
             
-            if (myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src") === "Images/FruitsLandingPage.jpg") {
+            let target = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src");
+            if ( target === "Images/FruitsLandingPage.jpg") {
                 myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
-                clearTimeout(1);
+                let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
+                myVid.style.display = "none";
             }
         
         }
@@ -169,6 +179,15 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
 
     })
 }
+// .................................end project container animation.................................
+
+
+
+
+
+
+
+
 
 
 
@@ -186,8 +205,6 @@ for (let i = 0; i < myProjectsContainer.length; i++){
         }
     })  
 }
-
-
 
 window.onscroll = () => {
 
@@ -251,10 +268,27 @@ function mybarFunction (){
     myTheBar[14].style.width = "40%";
     mySkillProgressSpan[14].textContent = "40%";
 }
+// .................................end text animation code.................................
 
 
-// .................................navigation arrows.................................
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .................................start navigation arrows.................................
 myToSkills.addEventListener("click", function () {
     myskillsSection.style.left = "0%";
     setTimeout(mybarFunction, 1000);
@@ -273,23 +307,29 @@ myToCertification.addEventListener("click", function () {
 })
 myBackToCertifications.addEventListener("click", function () {
     myShowCertificat.style.right = "-100%";
-    
-
 })
 myToStudie.addEventListener("click", function () {
     myCertificationSection.style.left = "100%";
 })
+// .................................end navigation arrows.................................
 
 
 
 
 
+
+
+
+
+
+// .................................start titels animations.................................
 function bioSectionFadeOut() {
     myHeader.classList.add("animate__animated", "animate__slideOutUp", "animate__delay-1s");
     myImgAside.classList.add("animate__animated", "animate__slideOutRight");
     myHeaderOne.classList.add("animate__animated", "animate__slideOutDown");
     myHyperLink.classList.add("animate__animated", "animate__hinge");
 }
+// .................................end titels animations.................................
 
 
 
@@ -303,8 +343,7 @@ function bioSectionFadeOut() {
 
 
 
-
-
+// .................................start scrolling code.................................
 for (let i = 0; i < myRightArrows.length; i++){
     myRightArrows[i].addEventListener("click", function (e) {
         if (e.currentTarget.classList.contains("biRight")) {
@@ -331,9 +370,6 @@ for (let i = 0; i < myRightArrows.length; i++){
         }
     })
 }
-
-
-
 for (let i = 0; i < myLeftArrows.length; i++){
     myLeftArrows[i].addEventListener("click", function (e) {
         if(e.currentTarget.classList.contains("cLeft")){
@@ -359,6 +395,6 @@ for (let i = 0; i < myLeftArrows.length; i++){
         }
     })
 }
-
+// .................................end scrolling code.................................
 
 

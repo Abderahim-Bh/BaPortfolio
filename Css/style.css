@@ -667,8 +667,8 @@
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
-    height: 80%; /*275*/
-    width: 35%; 
+    height: 400px; /*275*/
+    width: 350px; 
     display: flex;
     flex-direction: column;
     border: 3px solid black;
@@ -676,9 +676,11 @@
     transition: width 0.3s ease;
     position: relative;
     
+    
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
-    width: 70%;
+    width: 650px;
+    height: 400px;
 }
 
 
@@ -686,6 +688,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer img{
@@ -703,10 +706,13 @@
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer video {
-    height: 80%;
+    height: 100%;
     width: 100%;
     position: absolute;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
 }
 
 
