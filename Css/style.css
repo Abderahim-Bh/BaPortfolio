@@ -1317,11 +1317,12 @@
 
 }
 .container .studiesAndCertificationsSection .certificationsSection .showCertificat {
-    height: 100%;
+    height: 79.6vh;
     width: 100%;
     background-color: white;
     position: absolute;
     right: -100%;
+    bottom: 0px;
     transition: all 0.5s ease;
     display: flex;
     align-items: center;
@@ -1412,6 +1413,7 @@
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: "fc fc cc sc" "gtc gtc gtc mc";
     overflow: hidden;
+    border-left: 3px solid black;
 }
 
 .container .contactSection .flowersContainer{
@@ -1652,6 +1654,10 @@
     
     .container .bioSection main .titleAside .hOneContainer{
         align-self: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     .container .bioSection main .titleAside a{
         align-self: auto;
@@ -1787,6 +1793,104 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
+    .container .bioSection main .titleAside h1{
+        font-size: 30px;
+    }
+    .container .bioSection main .titleAside h1 span:nth-child(4) {
+        font-size: 15px;
+    }
+    .container .bioSection main .titleAside .hireMe{
+        font-size: 11px;
+        padding: 4px 15px;
+    }
+    .container .aboutMeSection .aboutMeTextDiv .letters .heyThere{
+        font-size: 30px;
+    }
+    .container .aboutMeSection .aboutMeTextDiv{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .container .projectsAndSkillsSection .projectSection .projectHead {
+        font-size: 50px;
+    }
+    .container .projectsAndSkillsSection .skillsSection{
+        grid-template-areas: "bk hs" "ss hs";
+    }
+    .container .projectsAndSkillsSection .skillsSection .hardSkills{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        border-left: 3px solid black;
+        border-bottom: none;
+        overflow: scroll;
+    }
+    .container .projectsAndSkillsSection .skillsSection .basicKnowlidge{
+        border-left: none;
+        border-bottom: 3px solid black;
+    }
+    .container .projectsAndSkillsSection .skillsSection .softSkills .soft{
+        grid-template-areas: "rd rd p p p p p p p p";
+    }
+    .container .projectsAndSkillsSection .skillsSection .softSkills .soft div .roundDiv{
+        margin-left: 0px;
+        height: 5px;
+        width: 5px;
+        border: 2px solid black;
+    }
+    .container .projectsAndSkillsSection .skillsSection .softSkills .soft p {
+        font-size: 11px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline{
+        height: 35px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData{
+        width: 70px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dd {
+        height: 350%;
+        width: 170%;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData p{
+        font-size: 15px;
+    }
+    .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .titleStudie{
+        font-size: 16px;
+    }
+    .container .contactSection{
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: "fc fc fc fc" "gtc gtc gtc gtc" "gtc gtc gtc gtc" "gtc gtc gtc gtc" "sc sc sc sc" "sc sc sc sc" "cc cc cc cc" "cc cc cc cc" "cc cc cc cc" "cc cc cc cc";
+    }
+    .container .contactSection .getInTouchContainer{
+        font-size: 70px;
+        border-right: none;
+    }
+    .container .contactSection .mapContainer{
+        border-left: 3px solid black;
+        border-bottom: none;
+        display: none;
+    }
+    .container .contactSection .contactContainer{
+        border-bottom: none;
+        border-right: none;
+        border-top: 3px solid black;
+    }
+    .container .contactSection .socialMediaContainer{
+        border-bottom: none;
+        border-top: none;
+    }
+    .container .bioSection .navigationDiv .arrow .fa-regular{
+        font-size: 30px;
+    }
+    .container .aboutMeSection .navigationDiv .arrow .fa-regular{
+        font-size: 30px;
+    }
+    .container .projectsAndSkillsSection .navigationDiv .arrow .fa-regular{
+        font-size: 30px;
+    }
+    .container .studiesAndCertificationsSection .navigationDiv .arrow .fa-regular{
+        font-size: 30px;
+    }
+    .container .contactSection .navigationDiv .arrow .fa-regular{
+        font-size: 30px;
+    }
 }
 
 
