@@ -171,7 +171,12 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             if ( target === "Images/FruitsLandingPage.jpg") {
                 myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
                 let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
-                myVid.style.display = "none";
+                myVid.remove();
+            }
+            if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
+                myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
+                let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
+                myVid.remove();
             }
         
         }
