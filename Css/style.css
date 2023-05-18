@@ -355,7 +355,7 @@
 .container .bioSection main .titleAside .hireMe{
     text-decoration: none;
     font-family: var(--mainFont);
-    font-size: 20px;
+    font-size: 15px;
     border: 3px solid black;
     padding: 5px 20px;
     font-weight: bold;
@@ -367,8 +367,9 @@
     align-self: flex-start;
     cursor: url(../Images/hand-cursor.svg),auto;
     margin: 0px 0px 5px 5px;
+    transition: all 0.3s ease;
 }
-.container .bioSection main .titleAside .hireMe::before{
+/* .container .bioSection main .titleAside .hireMe::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -378,9 +379,9 @@
     background-color: var(--secondColor);
     z-index: -10;
     transition: left 0.3s ease;
-}
-.container .bioSection main .titleAside .hireMe:hover::before{
-    left: 0%;
+} */
+.container .bioSection main .titleAside .hireMe:hover{
+    background-color: white;
 }
 
 
