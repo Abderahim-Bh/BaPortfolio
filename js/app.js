@@ -173,7 +173,7 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
                 let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
                 myVid.remove();
             }
-            if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
+            if ( target === "Images/Js-Algo-DataStructureCopy.jpg") {
                 myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
                 let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
                 myVid.remove();

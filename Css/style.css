@@ -1294,16 +1294,10 @@
     width: 100%;
     scale: 1.2;
 }
-.container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat img{
-    width: 100%;
-    scale: 1.2;
-}
-
-
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .certificatDescription{
     position: absolute;
-    background-color: var(--mainColor);
+    background-color: white;
     bottom: 0%;
     transform: translateY(100%);
     border-top: 3px solid black;
@@ -1325,7 +1319,7 @@
 
 }
 .container .studiesAndCertificationsSection .certificationsSection .showCertificat {
-    height: 79.6vh;
+    height: 100%;
     width: 100%;
     background-color: white;
     position: absolute;
@@ -1783,7 +1777,7 @@
 
 
     .container .studiesAndCertificationsSection .certificationsSection .certificateContainer{
-        padding-left: 100px;
+        padding: 10px 60px;
     }
 
     .container .contactSection .getInTouchContainer{
@@ -1803,6 +1797,22 @@
     }
     .container .contactSection .contactContainer .divContainer .theDiv{
         font-size: 12px;
+    }
+
+    .container .bioSection .navigationDiv .arrow .fa-regular{
+        font-size: 35px;
+    }
+    .container .aboutMeSection .navigationDiv .arrow .fa-regular{
+        font-size: 35px;
+    }
+    .container .projectsAndSkillsSection .navigationDiv .arrow .fa-regular{
+        font-size: 35px;
+    }
+    .container .studiesAndCertificationsSection .navigationDiv .arrow .fa-regular{
+        font-size: 35px;
+    }
+    .container .contactSection .navigationDiv .arrow .fa-regular{
+        font-size: 35px;
     }
     
 }
