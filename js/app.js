@@ -61,6 +61,26 @@ let myMenuBtn = document.querySelector(".menuBtn");
 let myResponsivNav = document.querySelector(".responsivNav");
 
 
+
+// .................................start fullPage animation.................................
+
+
+// .................................end fullPage animation.................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .................................start menu button animation.................................
 
 if (window.innerWidth <= 768) {
