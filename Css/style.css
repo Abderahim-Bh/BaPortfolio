@@ -29,6 +29,7 @@
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
 }
 
 
@@ -38,7 +39,6 @@
         transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 }
-
 .background {
     position: absolute;
     width: 100vw;
@@ -48,7 +48,6 @@
     background: #e8f3d6;
     overflow: hidden;
 }
-
 .background span {
     width: 50vmin;
     height: 50vmin;
@@ -61,7 +60,6 @@
     animation-iteration-count: infinite;
 }
 
-
 .background span:nth-child(0) {
     color: #ffffff;
     top: 62%;
@@ -71,7 +69,6 @@
     transform-origin: -18vw 8vh;
     box-shadow: 100vmin 0 13.448751027903972vmin currentColor;
 }
-
 .background span:nth-child(1) {
     color: #ffffff;
     top: 52%;
@@ -81,7 +78,6 @@
     transform-origin: -24vw 22vh;
     box-shadow: -100vmin 0 12.83881124491001vmin currentColor;
 }
-
 .background span:nth-child(2) {
     color: #ffffff;
     top: 14%;
@@ -91,7 +87,6 @@
     transform-origin: -13vw -1vh;
     box-shadow: -100vmin 0 13.377568445532527vmin currentColor;
 }
-
 .background span:nth-child(3) {
     color: #ffffff;
     top: 40%;
@@ -101,7 +96,6 @@
     transform-origin: -19vw -5vh;
     box-shadow: 100vmin 0 12.504036008986525vmin currentColor;
 }
-
 .background span:nth-child(4) {
     color: #ffffff;
     top: 70%;
@@ -111,7 +105,6 @@
     transform-origin: 23vw 14vh;
     box-shadow: -100vmin 0 12.747205264254065vmin currentColor;
 }
-
 .background span:nth-child(5) {
     color: #ffffff;
     top: 15%;
@@ -121,7 +114,6 @@
     transform-origin: 0vw 8vh;
     box-shadow: -100vmin 0 13.050948421468533vmin currentColor;
 }
-
 .background span:nth-child(6) {
     color: #ffffff;
     top: 98%;
@@ -131,7 +123,6 @@
     transform-origin: 2vw 22vh;
     box-shadow: 100vmin 0 13.123951075719907vmin currentColor;
 }
-
 .background span:nth-child(7) {
     color: #ffffff;
     top: 81%;
@@ -141,7 +132,6 @@
     transform-origin: 0vw 17vh;
     box-shadow: -100vmin 0 13.023547790246788vmin currentColor;
 }
-
 .background span:nth-child(8) {
     color: #ffffff;
     top: 70%;
@@ -151,7 +141,6 @@
     transform-origin: 4vw -21vh;
     box-shadow: -100vmin 0 12.554598636518994vmin currentColor;
 }
-
 .background span:nth-child(9) {
     color: #ffffff;
     top: 8%;
@@ -161,7 +150,6 @@
     transform-origin: -10vw 11vh;
     box-shadow: 100vmin 0 12.987328231382287vmin currentColor;
 }
-
 .background span:nth-child(10) {
     color: #ffffff;
     top: 91%;
@@ -171,7 +159,6 @@
     transform-origin: -19vw 19vh;
     box-shadow: 100vmin 0 12.608642205476169vmin currentColor;
 }
-
 .background span:nth-child(11) {
     color: #ffffff;
     top: 8%;
@@ -181,7 +168,6 @@
     transform-origin: -11vw -3vh;
     box-shadow: 100vmin 0 12.502652785237446vmin currentColor;
 }
-
 .background span:nth-child(12) {
     color: #ffffff;
     top: 18%;
@@ -191,7 +177,6 @@
     transform-origin: 12vw -4vh;
     box-shadow: 100vmin 0 12.93992801620497vmin currentColor;
 }
-
 .background span:nth-child(13) {
     color: #ffffff;
     top: 65%;
@@ -201,7 +186,6 @@
     transform-origin: -3vw 8vh;
     box-shadow: -100vmin 0 13.41343940803095vmin currentColor;
 }
-
 .background span:nth-child(14) {
     color: #ffffff;
     top: 45%;
@@ -211,7 +195,6 @@
     transform-origin: -12vw -5vh;
     box-shadow: -100vmin 0 12.852829337927393vmin currentColor;
 }
-
 .background span:nth-child(15) {
     color: #ffffff;
     top: 36%;
@@ -221,7 +204,6 @@
     transform-origin: -23vw -8vh;
     box-shadow: 100vmin 0 13.248577579876416vmin currentColor;
 }
-
 .background span:nth-child(16) {
     color: #ffffff;
     top: 9%;
@@ -231,7 +213,6 @@
     transform-origin: 18vw 18vh;
     box-shadow: -100vmin 0 13.493066071686114vmin currentColor;
 }
-
 .background span:nth-child(17) {
     color: #ffffff;
     top: 80%;
@@ -256,6 +237,8 @@
     overflow: hidden;
 }
 
+
+
 .container .bioSection .preloader {
     height: 100%;
     width: 100%;
@@ -266,15 +249,40 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    transition: all 1.3s ease;
+    border-bottom: 3px solid black;
+}
+.container .bioSection .preloaderAnimation {
+    transform: translateY(-100%);
 }
 
+.container .bioSection .theAnimationTimer {
+    position: absolute;
+    left: 80%;
+    top: 75%;
+    font-size: 100px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.container .bioSection .theAnimationTimer span:first-child {
+    width: 170px;
+    text-align: center;
+}
+
+.container .bioSection .theAnimationTimer span:nth-child(2) {
+    font-size: 70px;
+    margin-left: -25px;
+}
 
 /* ********************************************* */
 .ml5 {
     position: relative;
     font-weight: 300;
-    font-size: 4.5em;
-    color: #402d2d;
+    font-size: 4em;
+    color: black;
+    transition: all 1s ease;
 }
 
 .ml5 .text-wrapper {
@@ -298,19 +306,15 @@
     transform-origin: 0.5 0;
 }
 
-.ml5 .ampersand {
-    font-family: Baskerville, serif;
-    font-style: italic;
-    font-weight: 400;
-    width: 1em;
-    margin-right: -0.1em;
-    margin-left: -0.1em;
-}
 
 .ml5 .letters {
     display: inline-block;
     opacity: 0;
 }
+.ml5 .letters-left {
+    color: var(--secondColor);
+}
+
 /* ***************************************************** */
 
 .container .bioSection nav ul{
@@ -1673,6 +1677,15 @@
             font-size: 15px;
         }
 
+        .container .bioSection .theAnimationTimer{
+            font-size: 90px;
+            top: 80%;
+            left: 80%;  
+        }
+        .container .bioSection .theAnimationTimer span:nth-child(2) {
+            font-size: 65px;
+            margin-left: -10px;
+        }
 
 
 
@@ -1871,7 +1884,14 @@
     .container .contactSection .navigationDiv .arrow .fa-regular{
         font-size: 35px;
     }
-    
+      .container .bioSection .theAnimationTimer{
+        font-size: 70px;
+        top: 85%;
+        left: 75%;
+    }
+    .container .bioSection .theAnimationTimer span:nth-child(2) {
+        font-size: 45px;
+    }
 }
 
 
@@ -1986,6 +2006,15 @@
     .container .contactSection .navigationDiv .arrow .fa-regular{
         font-size: 30px;
     }
+    .container .bioSection .theAnimationTimer{
+        font-size: 50px;
+        top: 90%;
+        left: 75%;
+    }
+     .container .bioSection .theAnimationTimer span:nth-child(2) {
+        font-size: 30px;
+    }
+
 }
 
 

@@ -59,13 +59,43 @@ let myFaCircleRight = document.querySelectorAll(".fa-circle-right");
 let myBioSection = document.querySelector(".bioSection");
 let myMenuBtn = document.querySelector(".menuBtn");
 let myResponsivNav = document.querySelector(".responsivNav");
+let myTheAnimationTimer = document.querySelector(".theAnimationTimer");
+let myMl5 = document.querySelector(".ml5");
+let myPreloader = document.querySelector(".preloader");
 
 
 
-// .................................start fullPage animation.................................
+// .................................start preloader animation.................................
 
 
-// .................................end fullPage animation.................................
+let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
+setInterval(function () {
+    myNum += 1;
+    myTheAnimationTimer.firstElementChild.innerHTML = myNum;
+    if (myNum === 100) {
+        clearInterval(1)
+    }
+
+}, 100);
+
+setTimeout(function () {
+    myTheAnimationTimer.style.opacity = "1";
+}, 2000)
+
+window.onload = function () {
+    setTimeout(function () {
+        myMl5.style.opacity = "0";
+        myTheAnimationTimer.style.opacity = "0";
+        myContainer.style.position = "initial";
+    },11000)
+    setTimeout(function () {
+        myPreloader.classList.add("preloaderAnimation");
+    }, 12000)
+}
+
+
+
+// .................................end preloader animation.................................
 
 
 
