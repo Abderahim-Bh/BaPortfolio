@@ -68,30 +68,30 @@ let myPreloader = document.querySelector(".preloader");
 // .................................start preloader animation.................................
 
 
-let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
-setInterval(function () {
-    myNum += 1;
-    myTheAnimationTimer.firstElementChild.innerHTML = myNum;
-    if (myNum === 100) {
-        clearInterval(1)
-    }
+// let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
+// setInterval(function () {
+//     myNum += 1;
+//     myTheAnimationTimer.firstElementChild.innerHTML = myNum;
+//     if (myNum === 100) {
+//         clearInterval(1)
+//     }
 
-}, 100);
+// }, 100);
 
-setTimeout(function () {
-    myTheAnimationTimer.style.opacity = "1";
-}, 2000)
+// setTimeout(function () {
+//     myTheAnimationTimer.style.opacity = "1";
+// }, 2000)
 
-window.onload = function () {
-    setTimeout(function () {
-        myMl5.style.opacity = "0";
-        myTheAnimationTimer.style.opacity = "0";
-        myContainer.style.position = "initial";
-    },11000)
-    setTimeout(function () {
-        myPreloader.classList.add("preloaderAnimation");
-    }, 12000)
-}
+// window.onload = function () {
+//     setTimeout(function () {
+//         myMl5.style.opacity = "0";
+//         myTheAnimationTimer.style.opacity = "0";
+//         myContainer.style.position = "initial";
+//     },11000)
+//     setTimeout(function () {
+//         myPreloader.classList.add("preloaderAnimation");
+//     }, 12000)
+// }
 
 
 
@@ -296,32 +296,28 @@ function mybarFunction (){
     mySkillProgressSpan[0].textContent = "70%";
     myTheBar[1].style.width = "90%";
     mySkillProgressSpan[1].textContent = "90%";
-    myTheBar[2].style.width = "80%";
-    mySkillProgressSpan[2].textContent = "80%";
-    myTheBar[3].style.width = "50%";
-    mySkillProgressSpan[3].textContent = "50%";
-    myTheBar[4].style.width = "50%";
-    mySkillProgressSpan[4].textContent = "50%";
-    myTheBar[5].style.width = "30%";
-    mySkillProgressSpan[5].textContent = "30%";
-    myTheBar[6].style.width = "30%";
-    mySkillProgressSpan[6].textContent = "30%";
-    myTheBar[7].style.width = "30%";
-    mySkillProgressSpan[7].textContent = "30%";
+    myTheBar[2].style.width = "90%";
+    mySkillProgressSpan[2].textContent = "90%";
+    myTheBar[3].style.width = "80%";
+    mySkillProgressSpan[3].textContent = "80%";
+    myTheBar[4].style.width = "60%";
+    mySkillProgressSpan[4].textContent = "60%";
+    myTheBar[5].style.width = "60%";
+    mySkillProgressSpan[5].textContent = "60%";
+    myTheBar[6].style.width = "90%";
+    mySkillProgressSpan[6].textContent = "90%";
+    myTheBar[7].style.width = "50%";
+    mySkillProgressSpan[7].textContent = "50%";
     myTheBar[8].style.width = "50%";
     mySkillProgressSpan[8].textContent = "50%";
     myTheBar[9].style.width = "90%";
     mySkillProgressSpan[9].textContent = "90%";
-    myTheBar[10].style.width = "70%";
-    mySkillProgressSpan[10].textContent = "70%";
-    myTheBar[11].style.width = "70%";
-    mySkillProgressSpan[11].textContent = "70%";
-    myTheBar[12].style.width = "90%";
-    mySkillProgressSpan[12].textContent = "90%";
-    myTheBar[13].style.width = "100%";
-    mySkillProgressSpan[13].textContent = "100%";
-    myTheBar[14].style.width = "40%";
-    mySkillProgressSpan[14].textContent = "40%";
+    myTheBar[10].style.width = "90%";
+    mySkillProgressSpan[10].textContent = "90%";
+    myTheBar[11].style.width = "80%";
+    mySkillProgressSpan[11].textContent = "80%";
+    myTheBar[12].style.width = "100%";
+    mySkillProgressSpan[12].textContent = "100%";
 }
 // .................................end text animation code.................................
 
