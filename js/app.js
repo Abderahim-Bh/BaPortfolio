@@ -212,7 +212,7 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
         else if (myprojectInfoHyperLinks[i].innerHTML === "Close") {
             e.currentTarget.parentElement.parentElement.classList.remove("projectContainerAnimation")
             e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
-            myprojectInfoHyperLinks[i].innerHTML = "Live demo";
+            myprojectInfoHyperLinks[i].innerHTML = "Watch video";
             myprojectInfoHyperLinks[i].style.backgroundColor = "#FAAB78";
             
             let target = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src");
