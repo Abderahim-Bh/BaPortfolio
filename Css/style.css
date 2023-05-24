@@ -727,7 +727,7 @@
 
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer{
-    height: 400px; /*275*/
+    height: 410px; /*275*/
     width: 350px; 
     display: flex;
     flex-direction: column;
@@ -740,7 +740,7 @@
 }
 .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
     width: 650px;
-    height: 392px;
+    height: 399px;
 }
 
 
@@ -833,13 +833,15 @@
     grid-row-start: 2;
     grid-row-end: 3;
     border-top: 3px solid black;
-    padding: 10px;
+    padding: 5px 10px;
     font-family: var(--mainFont);
     font-weight: 350;
-    line-height: 19px;
+    line-height: 20px;
 }
 
-
+.container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectDesc p{
+    padding-bottom: 5px;
+}
 
 
 .container .projectsAndSkillsSection .skillsSection{
@@ -1923,7 +1925,7 @@
 
     .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
         width: 300px;
-        height: 248px;  
+        height: 250px;  
     }
 
     .container .projectsAndSkillsSection .skillsSection{

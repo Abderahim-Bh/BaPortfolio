@@ -176,7 +176,7 @@ for (let i = 0; i < myCc.length; i++){
 // .................................start project container animation.................................
 function createVideoElemnt(videoType, target) {
     let counter = 0
-    if (target === "Images/FruitsLandingPage.jpg") {
+    if (target === "Images/ProjectsImg/JobBoard.PNG") {
         counter = 0
     } else if (target === "Images/Js-Algo-DataStructureCopy.jpg") {
         counter = 1
@@ -189,14 +189,14 @@ function createVideoElemnt(videoType, target) {
 
 for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
     myprojectInfoHyperLinks[i].addEventListener("click", (e) => {
-        if (e.currentTarget.innerHTML === "Live demo") {
+        if (e.currentTarget.innerHTML === "Watch video") {
             e.currentTarget.parentElement.parentElement.classList.add("projectContainerAnimation")
-            e.currentTarget.parentElement.parentElement.style.filter = "saturate(1)";
             e.currentTarget.innerHTML = "Close";
             e.currentTarget.style.backgroundColor = "#FF6969";
             
             let target = e.currentTarget.parentElement.previousElementSibling.firstElementChild.getAttribute("src"); 
-            if (target === "Images/FruitsLandingPage.jpg") {
+            console.log(target)
+            if (target === "Images/ProjectsImg/JobBoard.PNG") {
                 e.currentTarget.parentElement.previousElementSibling.firstElementChild.classList.add("imgAnimate")
                 setTimeout(function () {
                     createVideoElemnt("vidOne.mp4", target)
@@ -208,8 +208,6 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
                     createVideoElemnt("vidTwo.mp4", target)
                 },500)
             }
-            
-          
         }
         else if (myprojectInfoHyperLinks[i].innerHTML === "Close") {
             e.currentTarget.parentElement.parentElement.classList.remove("projectContainerAnimation")
@@ -218,7 +216,7 @@ for (let i = 0; i <  myprojectInfoHyperLinks.length; i++){
             myprojectInfoHyperLinks[i].style.backgroundColor = "#FAAB78";
             
             let target = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.getAttribute("src");
-            if ( target === "Images/FruitsLandingPage.jpg") {
+            if (target === "Images/ProjectsImg/JobBoard.PNG") {
                 myprojectInfoHyperLinks[i].parentElement.previousElementSibling.firstElementChild.classList.remove("imgAnimate");
                 let myVid = myprojectInfoHyperLinks[i].parentElement.previousElementSibling.querySelector("video");
                 myVid.remove();
