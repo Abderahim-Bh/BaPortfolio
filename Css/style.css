@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    position: fixed;
 }
 
 
@@ -249,9 +249,14 @@
     justify-content: center;
     flex-direction: column;
     font-family: 'Dancing Script', cursive;
-    transition: all 1.3s ease;
+    transition: transform 1.3s ease;
+}
+
+.container .bioSection .preloaderBorder {
     border-bottom: 3px solid black;
 }
+
+
 .container .bioSection .preloaderAnimation {
     transform: translateY(-100%);
 }

@@ -68,30 +68,31 @@ let myPreloader = document.querySelector(".preloader");
 // .................................start preloader animation.................................
 
 
-// let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
-// setInterval(function () {
-//     myNum += 1;
-//     myTheAnimationTimer.firstElementChild.innerHTML = myNum;
-//     if (myNum === 100) {
-//         clearInterval(1)
-//     }
+let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
+setInterval(function () {
+    myNum += 1;
+    myTheAnimationTimer.firstElementChild.innerHTML = myNum;
+    if (myNum === 100) {
+        clearInterval(1)
+    }
 
-// }, 100);
+}, 100);
 
-// setTimeout(function () {
-//     myTheAnimationTimer.style.opacity = "1";
-// }, 2000)
+setTimeout(function () {
+    myTheAnimationTimer.style.opacity = "1";
+}, 2000)
 
-// window.onload = function () {
-//     setTimeout(function () {
-//         myMl5.style.opacity = "0";
-//         myTheAnimationTimer.style.opacity = "0";
-//         myContainer.style.position = "initial";
-//     },11000)
-//     setTimeout(function () {
-//         myPreloader.classList.add("preloaderAnimation");
-//     }, 12000)
-// }
+window.onload = function () {
+    setTimeout(function () {
+        myMl5.style.opacity = "0";
+        myTheAnimationTimer.style.opacity = "0";
+        myContainer.style.position = "initial";
+    },11000)
+    setTimeout(function () {
+        myPreloader.classList.add("preloaderAnimation");
+        myPreloader.classList.add("preloaderBorder");
+    }, 12000)
+}
 
 
 
