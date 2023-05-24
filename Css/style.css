@@ -530,6 +530,7 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
+    cursor: pointer;
 }
 
 .container .bioSection .navigationDiv .arrow .fa-regular{
@@ -602,7 +603,7 @@
     font-size: 18px;
     line-height: 30px;
     font-family: var(--mainFont);
-    font-weight: bold;
+    font-weight: 500;
     background-color: white;
     padding: 20px 15px 15px;
     border: 3px solid black;
@@ -613,6 +614,7 @@
 
 .container .aboutMeSection .aboutMeTextDiv .letters .heyThere{
     font-size: 60px;
+    font-weight: 500;
     display: block;
     margin-bottom: 20px;
 }
@@ -633,6 +635,8 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
+    cursor: pointer;
+
 }
 
 .container .aboutMeSection .navigationDiv .arrow .fa-regular{
@@ -817,6 +821,7 @@
     position: relative;
     z-index: 2;
     background-color: #f8c9ab;
+    cursor: pointer;
 }
 
 
@@ -835,8 +840,9 @@
     border-top: 3px solid black;
     padding: 5px 10px;
     font-family: var(--mainFont);
-    font-weight: 350;
+    font-weight: 400;
     line-height: 20px;
+    font-size: 15px;
 }
 
 .container .projectsAndSkillsSection .projectSection .project .projectContainer .projectInfo .projectDesc p{
@@ -1038,6 +1044,8 @@
     flex-direction: column;
     width: fit-content;
     z-index: 1;
+    cursor: pointer;
+
 }
 
 
@@ -1051,6 +1059,7 @@
     flex-direction: column;
     width: fit-content;
     z-index: 1;
+    cursor: pointer;
 }
 
 .container .projectsAndSkillsSection .navigationDiv .arrow .fa-regular{
@@ -1325,11 +1334,15 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     position: relative;
     background-color: var(--mainColor);
+
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .cc{
     margin: 10px;
     border: 3px solid black;
+    background-color: lightpink;
+    height: 160px;
+    width: 200px;
 }
 
 
@@ -1343,6 +1356,8 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    background-color: lightblue;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .certificateContainer .certificatDiv .imgCertificat{
@@ -1398,7 +1413,7 @@
 
 .container .studiesAndCertificationsSection .certificationsSection .showCertificat img{
     border: 3px solid black;
-    width: 60%;
+    width: 700px;
 }
 
 
@@ -1412,7 +1427,8 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    z-index: 1;    
+    z-index: 1;
+    cursor: pointer;
 }
 
 .container .studiesAndCertificationsSection .certificationsSection .navigationDiv {
@@ -1583,6 +1599,7 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
+    cursor: pointer;
 }
 
 .container .contactSection .navigationDiv .arrow .fa-regular{
@@ -1633,13 +1650,13 @@
         }
 
         .container .projectsAndSkillsSection .projectSection .project .projectContainer {
-            height: 350px;
+            height: 385px;
             width: 300px;
         }
 
         .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
             width: 450px;
-            height: 300px;  
+            height: 305px;  
         }
 
 
@@ -1657,6 +1674,9 @@
             overflow: scroll;
         }
 
+        .container .studiesAndCertificationsSection .certificationsSection .showCertificat img{
+            width: 600px;
+        }
         .container .contactSection .getInTouchContainer{
             font-size: 145px;
         }
@@ -1850,6 +1870,10 @@
         padding: 10px 60px;
     }
 
+    .container .studiesAndCertificationsSection .certificationsSection .showCertificat img{
+        width: 500px;
+    }
+
     .container .contactSection .getInTouchContainer{
         font-size: 110px;
     }
@@ -1925,7 +1949,7 @@
 
     .container .projectsAndSkillsSection .projectSection .project .projectContainerAnimation {
         width: 300px;
-        height: 250px;  
+        height: 255px;  
     }
 
     .container .projectsAndSkillsSection .skillsSection{
@@ -1968,6 +1992,10 @@
     }
     .container .studiesAndCertificationsSection .studiesSection .timlineContainer .timeline .timeLineData .dateDescription .titleStudie{
         font-size: 16px;
+    }
+
+    .container .studiesAndCertificationsSection .certificationsSection .showCertificat img{
+        width: 300px;
     }
     .container .contactSection{
         grid-template-rows: repeat(10,1fr);
