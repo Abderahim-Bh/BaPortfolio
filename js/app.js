@@ -183,7 +183,7 @@ function createVideoElemnt(videoType, target) {
         counter = 1
     }
     myElement = document.createElement("video");
-    myElement.setAttribute("src", "/videos/" + videoType)
+    myElement.setAttribute("src", "videos/" + videoType)
     myElement.setAttribute("controls", "controls");
     myImageDiv[counter].append(myElement)
 }
