@@ -68,19 +68,19 @@ let myPreloader = document.querySelector(".preloader");
 // .................................start preloader animation.................................
 
 
-let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
-setInterval(function () {
-    myNum += 1;
-    myTheAnimationTimer.firstElementChild.innerHTML = myNum;
-    if (myNum === 100) {
-        clearInterval(1)
-    }
+// let myNum = parseInt(myTheAnimationTimer.firstElementChild.innerHTML);
+// setInterval(function () {
+//     myNum += 1;
+//     myTheAnimationTimer.firstElementChild.innerHTML = myNum;
+//     if (myNum === 100) {
+//         clearInterval(1)
+//     }
 
-}, 100);
+// }, 100);
 
-setTimeout(function () {
-    myTheAnimationTimer.style.opacity = "1";
-}, 2000)
+// setTimeout(function () {
+//     myTheAnimationTimer.style.opacity = "1";
+// }, 2000)
 
 window.onload = function () {
     setTimeout(function () {

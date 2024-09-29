@@ -263,11 +263,12 @@
 
 .container .bioSection .theAnimationTimer {
     position: absolute;
-    left: 80%;
-    top: 75%;
-    font-size: 100px;
-    opacity: 0;
+    left: 90%;
+    top: 90%;
+    font-size: 40px;
+    opacity: 1;
     transition: all 1s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container .bioSection .theAnimationTimer span:first-child {
